@@ -116,7 +116,6 @@ function calcular() {
         }
         
         document.getElementById('mostrarauto').innerText = "";
-        document.getElementById('mostrarco').innerText = "";
         document.getElementById('mostrarhetero').innerText = "";
         document.getElementById('mostrarsemestral').innerText = "";
 
