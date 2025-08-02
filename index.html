@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CalcuPromedio</title>
+		<link rel="stylesheet" href="css/main.css">
+    </head>
+    
+    <body>
+        <script src="js/main.js"></script>
+        <div class="firma">Creado por Aimbot/Manolo (11.02°)</div>
+        <h1>Calculadora de promedio</h1>
+        <p>Los campos vacíos (SOLO EN SEMESTRAL) te dirán qué nota necesitas para llegar a 3.0.</p>
+        <p>Para notas decimales puedes usar tanto la coma o el punto</p>
+        <p>Notas del 50%</p>
+        <input type="number" id="nota50">
+        <input type="button" value="Enviar" onclick="enviar(document.getElementById('nota50').value, 0)">
+        <p>Notas Del 20%</p>
+        <input type="number" id="nota20">
+        <input type="button" value="Enviar" onclick="enviar(document.getElementById('nota20').value, 1)">
+        <p>AutoEvaluacion</p>
+        <input type="number" id="auto">
+        <input type="button" value="Enviar" onclick="enviar(document.getElementById('auto').value, 2)">
+        <p>HeteroEvaluacion</p>
+        <input type="number" id="hetero">
+        <input type="button" value="Enviar" onclick="enviar(document.getElementById('hetero').value, 3)">
+        <p>CoEvaluacion</p>
+        <input type="number" id="coev">
+        <input type="button" value="Enviar" onclick="enviar(document.getElementById('coev').value, 4)">
+        <p>Semestral</p>
+        <input type="number" id="semestral">
+        <input type="button" value="Enviar" onclick="enviar(document.getElementById('semestral').value, 5)">
+        <br><br><br>
+        <input type="button" value="Reiniciar" onclick="reset()">
+        <input type="button" value="Calcular" onclick="calcular()">
+        
+        <br><br>
+        
+        <label id="mostrar50"><br>tu 50%: *vacio*</label>
+        <label id="mostrar20"><br>tu 20%: *vacio*</label>
+        <label id="mostrarauto"><br>Tu AutoEvaluacion: *vacio*</label>
+        <label id="mostrarco"><br>Tu CoEvaluacion: *vacio*</label>
+        <label id="mostrarhetero"><br>Tu HeteroEvaluacion: *vacio*</label>
+        <label id="mostrarsemestral"><br>Tu semestral: *vacio*</label>
+    </body>
+</html>
