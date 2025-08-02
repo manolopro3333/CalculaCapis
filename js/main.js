@@ -126,7 +126,6 @@ function calcular() {
     document.getElementById('mostrar50').innerText = "\nSu definitiva seria de: " + (defsin + ((semestral*20)/100));
     document.getElementById('mostrar20').innerText = "";
     document.getElementById('mostrarauto').innerText = "";
-    document.getElementById('mostrarco').innerText = "";
     document.getElementById('mostrarhetero').innerText = "";
     document.getElementById('mostrarsemestral').innerText = "";
 
